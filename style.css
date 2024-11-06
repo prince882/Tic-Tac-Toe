@@ -96,7 +96,7 @@ nav {
     grid-template-rows: repeat(3, 20vw);
     grid-template-columns: repeat(3, 20vw);
   }
-  .box {
+  .Box {
     font-size: 12vw;
   }
 }

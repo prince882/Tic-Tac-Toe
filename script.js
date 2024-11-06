@@ -31,7 +31,7 @@ const changeTurn = () => {
 const CheckWin = () => {
   let wins;
   if (screen.width < 950) {
-    [
+    wins = [
       [0, 1, 2, 15, 15, 0],
       [3, 4, 5, 15, 45, 0],
       [6, 7, 8, 15, 75, 0],
@@ -82,8 +82,9 @@ const CheckWin = () => {
         `translate(${e[3]}vw,${e[4]}vw) rotate(${e[5]}deg)`;
       if (screen.width < 950) {
         document.querySelector(".line").style.width = "60vw";
+      } else {
+        document.querySelector(".line").style.width = "20vw";
       }
-      document.querySelector(".line").style.width = "20vw";
       gameover.play();
     }
     if (ab == 9 && Gameover === false) {
