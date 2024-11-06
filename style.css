@@ -26,6 +26,7 @@ nav {
   grid-template-columns: repeat(3, 10vw);
   font-family: Poppins;
   font-weight: 530;
+  position: relative;
 }
 .box:hover {
   background-color: rgb(242, 234, 250);
@@ -55,5 +56,47 @@ nav {
   border-top: 0;
 }
 .imgbox img {
-  display: none;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+#reset {
+  margin: 0px 23px;
+  padding: 6px 14px;
+  background: #efc7e5;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.info {
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 578;
+}
+.gameinfo h1 {
+  font-size: 2.5rem;
+}
+.line {
+  background: #911d91;
+  width: 0vw;
+  height: 3px;
+  position: absolute;
+  transition: width 1s ease-in-out;
+}
+@media only screen and (max-width: 950px) {
+  .Mainbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gameinfo {
+    margin-top: 38px;
+  }
+  .gameinfo h1 {
+    font-size: 1.65rem;
+  }
+  .container {
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+  }
+  .box {
+    font-size: 12vw;
+  }
 }
