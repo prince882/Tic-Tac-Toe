@@ -1,3 +1,59 @@
-body {
-  background-color: green;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style-type: none;
+}
+nav {
+  background-color: rgba(37, 9, 37, 1);
+  color: white;
+  height: 65px;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+}
+.Mainbox {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: Poppins;
+  font-weight: 530;
+}
+.box:hover {
+  background-color: rgb(242, 234, 250);
+  cursor: pointer;
+}
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameinfo {
+  padding: 0 34px;
+  font-family: "Baloo Bhaina 2", sans-serif;
+}
+.br0 {
+  border-right: 0;
+}
+.bl0 {
+  border-left: 0;
+}
+.bb0 {
+  border-bottom: 0;
+}
+.bt0 {
+  border-top: 0;
+}
+.imgbox img {
+  display: none;
 }
