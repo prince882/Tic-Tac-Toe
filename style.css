@@ -93,8 +93,8 @@ nav {
     font-size: 1.65rem;
   }
   .container {
-    grid-template-rows: repeat(3, 20vw);
-    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 30vw);
+    grid-template-columns: repeat(3, 30vw);
   }
   .Box {
     font-size: 12vw;
