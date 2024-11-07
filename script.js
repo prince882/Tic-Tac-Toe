@@ -21,7 +21,7 @@ let audioturn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
 let turn = "X";
 document.getElementsByClassName("info")[0].innerText = `Turn For ${n1}-${turn}`;
-
+music.play();
 let Gameover = false;
 // Change The turn
 const changeTurn = () => {
