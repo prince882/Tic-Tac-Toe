@@ -21,7 +21,6 @@ let audioturn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
 let turn = "X";
 document.getElementsByClassName("info")[0].innerText = `Turn For ${n1}-${turn}`;
-music.play();
 let Gameover = false;
 // Change The turn
 const changeTurn = () => {
@@ -100,6 +99,7 @@ Array.from(boxes).forEach((element, index) => {
   let boxtext = element.querySelector(".Boxtext");
   console.log(boxtext);
   element.addEventListener("click", () => {
+    music.play();
     document.querySelector(".line").style.transition = "width 1s ease-in-out";
     if (boxtext.innerText == "") {
       boxtext.innerText = turn;
