@@ -1,5 +1,16 @@
-alert;
-
+let music = new Audio("music.mp3");
+window.addEventListener("load", () => {
+  music.play().catch(() => {
+    // If autoplay is blocked, wait for a user interaction
+    document.body.addEventListener(
+      "click",
+      () => {
+        music.play();
+      },
+      { once: true },
+    );
+  });
+});
 let res = Math.random();
 let toss = confirm("Do You Want To Toss A Coin");
 let cointoss = () => {
@@ -16,7 +27,6 @@ let n1 = prompt("Enter The Name Of The First person");
 let n2 = prompt("Enter The Name Of The Second person");
 
 console.log("Welcome to Tic Tac Toe");
-let music = new Audio("music.mp3");
 let audioturn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
 let turn = "X";
